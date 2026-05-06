@@ -8,6 +8,8 @@
 //* - Média;
 
 let numero;
+//? que faz a variável montante?
+//* montante é a variavél da soma de todos os números
 let montante = 0;
 let i = 0;
 do {
