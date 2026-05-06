@@ -2,5 +2,6 @@
 let message = "";
 for (i = 10; i >= 1; i--) {
     message = `${message} ${i}`;
+    alert(message)
 }
-alert(message)
+alert(message + ", fim da contagem regressiva!")
