@@ -5,7 +5,7 @@ numUm = Number(
   prompt("Por favor insira um número e eu mostrarei a tabuada dele de 1 a 10"),
 );
 for (let i = 1; i < 11; i++) {
-  message = `${message}
-${i} x ${numUm} = ${i * numUm}`;
+  message = `${message} ${i} x ${numUm} = ${i * numUm}
+  `;
   alert(message);
 }
