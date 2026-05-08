@@ -8,6 +8,7 @@
 let opcao;
 let listaProdutos = "Os produtos são:";
 let produto;
+let quantidadeProduto = 0;
 do {
   opcao = Number(
     prompt(`olá usuário escolha qual das opções a seguir você deseja acessar
@@ -18,11 +19,16 @@ do {
   switch (opcao) {
     case 1:
       produto = prompt("Insira o nome do produto");
+      quantidadeProduto++;
       listaProdutos = `${listaProdutos}
-${produto}`;
+${quantidadeProduto}- ${produto}`;
       break;
     case 2:
-      alert(listaProdutos);
+      if (listaProdutos === "Os produtos são:") {
+        alert("Você ainda não inseriu nenhum produto");
+      } else {
+        alert(listaProdutos);
+      }
       break;
     case 3:
       alert("Sistema encerrado.");
